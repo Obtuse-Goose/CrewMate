@@ -1,0 +1,27 @@
+{
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [
+		"libs/jquery-3.3.1.min.js",
+		  "crewmate.js"
+		],
+      "matches": [ "http://*.boardgamearena.com/*", "https://*.boardgamearena.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Improves the user interface when playing The Crew on boardgamearena.com",
+   "icons": {
+      "128": "image-128.png",
+      "48": "image-48.png"
+   },
+   "applications" : {
+      "gecko" : {
+         "id" : "crewmate@autocardanywhere.com"
+      }
+   },
+   "manifest_version": 2,
+   "name": "The Crew Mate",
+   "permissions": [ "http://*.boardgamearena.com/*", "https://*.boardgamearena.com/*" ],
+   "short_name": "CrewMate",
+   "version": "0.0.9",
+   "web_accessible_resources": [ "crewmate.css", "crewmate.js" ]
+}
